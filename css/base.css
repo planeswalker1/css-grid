@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
 }
@@ -17,5 +16,5 @@ body {
 }
 
 img {
-  width: 400px;
+  width: 100%;
 }

@@ -2,3 +2,28 @@
   margin: 0 auto;
   max-width: 1360px;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+.picture {
+  align-items: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px 1fr;
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+  }
+}
