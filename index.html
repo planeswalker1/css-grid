@@ -4,113 +4,16 @@ title-after: Best Gallery
 ---
 
 <div class="gallery">
+  {% for picture in site.data.pictures %}
   <div class="picture">
     <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
+      <img class="picture__picture" src="images/{{ picture.source }}" alt="Picture of {{ picture.alt }}">
     </div>
     <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
+      <h2>{{ picture.title }}</h2>
+      <p class="picture__photographer">Photographer Name: <a href="{{picture.href}}">{{ picture.photographer }}</a></p>
       <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-
-  <div class="picture">
-    <div>
-      <img class="picture__picture" src="images/queen-mary.jpg" alt="Picture of the queen mary ship">
-    </div>
-    <div class="picture__details">
-      <h2>Queen Mary</h2>
-      <p class="picture__photographer">Photographer Name: <a href="https://pixabay.com/en/users/skeeze-272447/">Skeeze</a></p>
-      <p class="picture__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
+  {% endfor %}
 </div>

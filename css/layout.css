@@ -15,15 +15,3 @@
   grid-gap: 10px;
   grid-template-columns: 150px 1fr;
 }
-
-@media screen and (max-width: 400px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (min-width: 1360px) {
-  .gallery {
-    grid-template-columns: repeat(2, minmax(400px, 1fr));
-  }
-}
